@@ -140,7 +140,7 @@ const BlueBox = () => {
           </div>
         </div>
         <div className='w-full flex items-center'>
-          <img className='ml-auto' src='/chart-green.jpg' alt='chart' />
+          <img className='ml-auto w-full object-cover' src='/chart-green.jpg' alt='chart' />
         </div>
       </div>
     </>

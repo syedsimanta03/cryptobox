@@ -65,10 +65,18 @@ const GreenBox = () => {
               <span className='bg-blue-900 p-2 rounded'>1.9 MB</span>
             </p>
           </div>
-          <img className='mt-6' src='/chart-red.jpg' alt='chart' />
+          <img
+            className='mt-6 w-full object-cover'
+            src='/chart-red.jpg'
+            alt='chart'
+          />
         </div>
         <div className='w-full flex items-center'>
-          <img className='ml-auto' src='/chart-green.jpg' alt='chart' />
+          <img
+            className='ml-auto w-full object-cover'
+            src='/chart-green.jpg'
+            alt='chart'
+          />
         </div>
       </div>
     </>
