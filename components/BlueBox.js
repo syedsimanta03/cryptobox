@@ -57,7 +57,9 @@ const BlueBox = () => {
               Block
               <span className='text-gray-400'> &lt; 830749 &gt; </span>
             </h1>
-            <span className='cross'>X</span>
+            <span onClick={showData} className='cursor-pointer'>
+              X
+            </span>
           </div>
           <div className='flex flex-wrap justify-between gap-6 bg-[#24273e]  p-5'>
             {/* onclick grid props */}
