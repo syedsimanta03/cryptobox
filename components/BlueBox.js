@@ -198,31 +198,34 @@ const BlueBox = () => {
                 alt='chart'
               />
               {auditclicked && (
-                <>
-                  <tr className='bg-gray-900'>
-                    <div className='flex justify-between p-3'>
-                      <p className='text-white'>Weight</p>
-                      <p className='text-white'>
-                        <span className='text-white'>4</span>
-                        <span className='text-gray-500'> MWU</span>
-                      </p>
-                    </div>
-                    <div className='flex justify-between p-3 bg-[#24273e]'>
-                      <p className='text-white'>Transaction</p>
-                      <p className='text-white'>
-                        <span className='text-white'>2214</span>
-                      </p>
-                    </div>
-                  </tr>
-                  <tr className='bg-gray-900'>
-                    <div className='flex justify-between  p-3'>
-                      <p className='text-white'>Total fees</p>
-                      <p className='text-white'>
-                        0.17 BTC <span className='text-yellow-400'>$8,700</span>
-                      </p>
-                    </div>
-                  </tr>
-                </>
+                <table>
+                  <tbody>
+                    <tr className='bg-gray-900'>
+                      <div className='flex justify-between p-3'>
+                        <p className='text-white'>Weight</p>
+                        <p className='text-white'>
+                          <span className='text-white'>4</span>
+                          <span className='text-gray-500'> MWU</span>
+                        </p>
+                      </div>
+                      <div className='flex justify-between p-3 bg-[#24273e]'>
+                        <p className='text-white'>Transaction</p>
+                        <p className='text-white'>
+                          <span className='text-white'>2214</span>
+                        </p>
+                      </div>
+                    </tr>
+                    <tr className='bg-gray-900'>
+                      <div className='flex justify-between  p-3'>
+                        <p className='text-white'>Total fees</p>
+                        <p className='text-white'>
+                          0.17 BTC{' '}
+                          <span className='text-yellow-400'>$8,700</span>
+                        </p>
+                      </div>
+                    </tr>
+                  </tbody>
+                </table>
               )}
             </div>
             {auditclicked && (
@@ -250,7 +253,8 @@ const BlueBox = () => {
                   src='/chart-green.jpg'
                   alt='chart'
                 />
-                <>
+                <table>
+                  <tbody>
                   <tr className='bg-gray-900'>
                     <div className='flex justify-between p-3'>
                       <p className='text-white'>Weight</p>
@@ -273,8 +277,9 @@ const BlueBox = () => {
                         0.17 BTC <span className='text-yellow-400'>$8,700</span>
                       </p>
                     </div>
-                  </tr>
-                </>
+                    </tr>
+                    </tbody>
+                </table>
               </div>
             )}
           </div>

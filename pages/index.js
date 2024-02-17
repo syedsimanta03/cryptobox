@@ -9,9 +9,8 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
     <main className={`md:px-16 md:py-16 px-8 py-8 ${inter.className}`}>
-      {/*  <GreenBox /> */}
-      <BlueBox />
-      <Transaction />
+        <BlueBox />
+        <Transaction />
     </main>
   )
 }
