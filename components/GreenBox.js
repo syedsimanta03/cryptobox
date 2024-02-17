@@ -30,7 +30,7 @@ const GreenBox = ({ green, setGreen }) => {
                 }}
               />
             </div>
-            <hr className='w-[80vw] flex border-y-[1.5px]' />
+            
           </div>
         )}
       </div>

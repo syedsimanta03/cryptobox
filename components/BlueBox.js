@@ -31,7 +31,6 @@ const BlueBox = ({ blue, setBlue }) => {
                 }}
               />
             </div>
-            <hr className='w-[80vw] flex border-y-[1.5px]' />
           </div>
         )}
         {/* show this code onClick the bluebox */}

@@ -28,7 +28,8 @@ const Block = () => {
         <p class='text-center inline'>&larr;</p>
         <p class='text-center inline'>&rarr;</p>
       </div>
-
+      {green && <hr className='w-full mt-10 flex border-y-[1.5px]' />}
+      {blue && <hr className='w-full mt-10 flex border-y-[1.5px]' />}
       <GreenBoxdata green={green} setGreen={handleGreen} />
       <BlueBoxdata blue={blue} setBlue={handleBlue} />
     </>

@@ -21,7 +21,7 @@ const BlueBoxdata = ({ blue, setBlue }) => {
     <>
       {blue && (
         <>
-          <div className='flex justify-between my-8'>
+          <div className='flex justify-between mt-20 mb-8'>
             <h1 className='font-bold text-3xl'>
               Block
               <span className='text-gray-400'> &lt; 830749 &gt; </span>
