@@ -41,7 +41,7 @@ const Transactioncard = ({ arrow, arrowAmount }) => {
             <small className='text-blue-300'>OP_CyTntYT5nX2</small>
             <small className='text-blue-300'>OP_CyTntYT5nX2</small>
           </div>
-          <div class='flex flex-col gap-y-2'>
+          <div className='flex flex-col gap-y-2'>
             <div className='flex items-center gap-x-2'>
               <svg
                 className={`w-[15px] h-[15px] ${arrowAmount}`}

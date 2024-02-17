@@ -51,7 +51,7 @@ const BlueBox = () => {
       <div className='flex flex-wrap justify-between gap-6 bg-[#24273e]  p-5'>
         {/* onclick grid props */}
         <table
-          className={`w-full flex gap-4 ${
+          className={`w-full grid grid-cols-1 md:flex gap-4 ${
             auditclicked ? 'flex-wrap' : 'flex-nowrap'
           }`}
         >
@@ -70,7 +70,6 @@ const BlueBox = () => {
                   <span className='text-yellow-400 ml-2'>
                     <svg
                       className='w-6 h-6'
-                      dataSlot='icon'
                       fill='none'
                       strokeWidth={1.5}
                       stroke='currentColor'
@@ -184,7 +183,11 @@ const BlueBox = () => {
               </div>
             </tr>
           </tbody>
-          <div className='w-full flex-nowrap justify-between items-center gap-4'>
+          <div
+            className={`w-full grid items-center gap-4 ${
+              auditclicked ? 'grid-cols-1 md:grid-cols-2' : 'grid-cols-1'
+            }`}
+          >
             <div className='flex flex-col w-full gap-4 text-center'>
               {auditclicked && (
                 <h1 className='font-bold text-3xl'>Expected Block</h1>
@@ -228,7 +231,6 @@ const BlueBox = () => {
                   <h1 className='font-bold text-3xl'>Actual Block</h1>
                   <svg
                     className='w-6 h-6'
-                    dataSlot='icon'
                     fill='none'
                     strokeWidth={1.5}
                     stroke='currentColor'
@@ -278,6 +280,36 @@ const BlueBox = () => {
           </div>
         </table>
       </div>
+      {/* details */}
+      {detailsclicked && (
+        <table className='w-full mt-4 border border-gray-800'>
+          <tbody>
+            <tr className='bg-gray-900'>
+              <div className='flex justify-between p-3'>
+                <p className='text-white'>Weight</p>
+                <p className='text-white'>
+                  <span className='text-white'>4</span>
+                  <span className='text-gray-500'> MWU</span>
+                </p>
+              </div>
+              <div className='flex justify-between p-3 bg-[#24273e]'>
+                <p className='text-white'>Transaction</p>
+                <p className='text-white'>
+                  <span className='text-white'>2214</span>
+                </p>
+              </div>
+            </tr>
+            <tr className='bg-gray-900'>
+              <div className='flex justify-between  p-3'>
+                <p className='text-white'>Total fees</p>
+                <p className='text-white'>
+                  0.17 BTC <span className='text-yellow-400'>$8,700</span>
+                </p>
+              </div>
+            </tr>
+          </tbody>
+        </table>
+      )}
       {/* buttons */}
       <div className='flex gap-4 justify-end my-8'>
         <button
