@@ -18,7 +18,7 @@ const BlueBox = () => {
   }
 
   return (
-    <>
+    <div>
       {/*blue box */}
       <div onClick={showData} className='cursor-pointer'>
         <p className='w-[150px] p-2 text-gray-400 text-center'>830750</p>
@@ -372,7 +372,7 @@ const BlueBox = () => {
           <Transaction />
         </div>
       )}
-    </>
+    </div>
   )
 }
 
