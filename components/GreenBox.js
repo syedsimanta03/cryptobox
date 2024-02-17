@@ -1,12 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useState } from 'react'
 
-const GreenBox = ({ green, setGreen }) => {
+const GreenBox = ({ green, setGreen, index }) => {
   const handleClick = () => {
     setGreen((green) => !green)
   }
   return (
-    <div onClick={handleClick} className='cursor-pointer'>
+    <div onClick={handleClick} className='cursor-pointer' key={index}>
       {/*green box */}
       <div className='relative'>
         <div className='w-[150px] h-[150px] bg-green-700 p-2 space-y-2 animate-pulse'>
@@ -30,7 +30,6 @@ const GreenBox = ({ green, setGreen }) => {
                 }}
               />
             </div>
-            
           </div>
         )}
       </div>
