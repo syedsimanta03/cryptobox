@@ -18,12 +18,14 @@ const Block = () => {
   return (
     <>
       <div className='grid grid-flow-col-dense justify-center gap-2 items-end'>
-        <GreenBox key='1' index='1' green={green} setGreen={handleGreen} />
-        <GreenBox key='2' index='2' green={green} setGreen={handleGreen} />
-        <GreenBox key='3' index='3' green={green} setGreen={handleGreen} />
+        <GreenBox  green={green} setGreen={handleGreen} />
+        <GreenBox  green={green} setGreen={handleGreen} />
+        <GreenBox  green={green} setGreen={handleGreen} />
+        <GreenBox  green={green} setGreen={handleGreen} />
         <div class='flex justify-center mx-2'>
           <div class='inline-block h-[200px] min-h-[1em] w-0.5  self-stretch bg-neutral-100 opacity-80'></div>
         </div>
+        <BlueBox blue={blue} setBlue={handleBlue} />
         <BlueBox blue={blue} setBlue={handleBlue} />
         <BlueBox blue={blue} setBlue={handleBlue} />
         <BlueBox blue={blue} setBlue={handleBlue} />
